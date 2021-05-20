@@ -1,0 +1,60 @@
+.header {
+  position: absolute;
+  width: 100%;
+  background: #000;
+  padding: 13px 0;
+  &__items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__logo {
+    flex: 0 0 233px;
+  }
+  &__nav {
+    display: flex;
+    align-items: center;
+    & .list {
+      display: flex;
+      align-items: center;
+    }
+    & .list__item {
+      margin-right: 15px;
+    }
+    & .list__link {
+      position: relative;
+      font-size: 13px;
+      font-weight: 700;
+      color: #fff;
+      text-transform: uppercase;
+      &::before {
+        content: '';
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        width: 0%;
+        height: 2px;
+        background: $primary;
+        transition: 0.3s;
+      }
+      &:hover::before {
+        width: 100%;
+      }
+    }
+  }
+  &__button {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    background: $primary;
+    padding: 10px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 700;
+    &-icon {
+      display: block;
+      margin-right: 7px;
+      font-size: 20px;
+    }
+  }
+}
