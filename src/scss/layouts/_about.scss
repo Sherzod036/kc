@@ -63,5 +63,10 @@
     background: $primary;
     border-radius: 20px;
     padding: 12px 22px;
+    transition: 0.3s;
+    &:hover {
+      color: $primary;
+      background: #fff;
+    }
   }
 }
