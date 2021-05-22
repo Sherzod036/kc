@@ -13,4 +13,39 @@ $(function () {
     arrows: false,
     focusOnSelect: true
   })
+
+  function appartmentActiveButton(ctx, button, buttonActive) {
+    $(button).removeClass(buttonActive)
+
+    ctx.addClass(buttonActive)
+  }
+
+  $('.appartment__type .appartment__button').on('click', function () {
+    const self = $(this)
+
+    appartmentActiveButton(
+      self,
+      '.appartment__type .appartment__button',
+      'appartment__button--active'
+    )
+  })
+
+  $('.appartment__count .appartment__button').on('click', function () {
+    const self = $(this)
+
+    appartmentActiveButton(
+      self,
+      '.appartment__count .appartment__button',
+      'appartment__button--active'
+    )
+  })
+  $('.appartment__size .appartment__button').on('click', function () {
+    const self = $(this)
+
+    appartmentActiveButton(
+      self,
+      '.appartment__size .appartment__button',
+      'appartment__button--active'
+    )
+  })
 })
