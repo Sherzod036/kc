@@ -14,38 +14,49 @@ $(function () {
     focusOnSelect: true
   })
 
+  const hamb = $('.hamburger')
+  hamb.on('click', () => {
+    hamb.toggleClass('is-active')
+    $('.header__nav').slideToggle().toggleClass('d-block')
+  })
+
   function appartmentActiveButton(ctx, button, buttonActive) {
     $(button).removeClass(buttonActive)
 
     ctx.addClass(buttonActive)
   }
 
-  $('.appartment__type .appartment__button').on('click', function () {
+  $('.appartment__type .module-border-wrap').on('click', function () {
     const self = $(this)
 
     appartmentActiveButton(
       self,
-      '.appartment__type .appartment__button',
-      'appartment__button--active'
+      '.appartment__type .module-border-wrap',
+      'module-border-wrap--active'
     )
   })
 
-  $('.appartment__count .appartment__button').on('click', function () {
+  $('.appartment__count .module-border-wrap').on('click', function () {
     const self = $(this)
 
     appartmentActiveButton(
       self,
-      '.appartment__count .appartment__button',
-      'appartment__button--active'
+      '.appartment__count .module-border-wrap',
+      'module-border-wrap--active'
     )
   })
-  $('.appartment__size .appartment__button').on('click', function () {
+  $('.appartment__size .module-border-wrap').on('click', function () {
     const self = $(this)
 
     appartmentActiveButton(
       self,
-      '.appartment__size .appartment__button',
-      'appartment__button--active'
+      '.appartment__size .module-border-wrap',
+      'module-border-wrap--active'
     )
   })
 })
+
+if (window.innerWidth > 1200) {
+  const scene = document.getElementById('scene')
+  const parallax = new Parallax(scene)
+}

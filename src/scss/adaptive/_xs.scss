@@ -1,2 +1,19 @@
 @media (max-width: 500px) {
+  .hero__title-sup {
+    font-size: 30px;
+    text-align: center;
+  }
+  .hero__title-sub {
+    font-size: 40px;
+    text-align: center;
+  }
+  .hero__title::before {
+    width: 100%;
+  }
+  .about__title::after {
+    width: 100%;
+  }
+  .about__video {
+    height: 270px;
+  }
 }

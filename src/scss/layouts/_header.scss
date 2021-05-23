@@ -64,3 +64,35 @@
     }
   }
 }
+
+.hamburger {
+  display: none;
+  -webkit-box-ordinal-group: 3;
+  -ms-flex-order: 2;
+  order: 2;
+  display: none;
+}
+.hamburger-box {
+  width: 35px;
+}
+.hamburger-inner,
+.hamburger-inner::after,
+.hamburger-inner::before {
+  width: 35px;
+  background-color: $primary;
+}
+.hamburger.is-active .hamburger-inner,
+.hamburger.is-active .hamburger-inner::after,
+.hamburger.is-active .hamburger-inner::before {
+  background-color: $primary;
+}
+.hamburger:hover,
+.hamburger:hover:after,
+.hamburger:hover:before {
+  opacity: 1;
+}
+.hamburger.is-active:hover,
+.hamburger.is-active:hover:after,
+.hamburger.is-active:hover:before {
+  opacity: 1;
+}

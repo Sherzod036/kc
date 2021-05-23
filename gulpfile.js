@@ -15,7 +15,8 @@ function clear() {
 function bmcss() {
   return src([
     'node_modules/bootstrap/dist/css/bootstrap-grid.css',
-    'node_modules/slick-carousel/slick/slick.css'
+    'node_modules/slick-carousel/slick/slick.css',
+    'node_modules/hamburgers/dist/hamburgers.css'
   ])
     .pipe(concat('bundle.min.css'))
     .pipe(csso({ comments: false }))
@@ -41,7 +42,8 @@ function styles() {
 function bmjs() {
   return src([
     'node_modules/gsap/dist/gsap.js',
-    'node_modules/slick-carousel/slick/slick.js'
+    'node_modules/slick-carousel/slick/slick.js',
+    'node_modules/parallax-js/dist/parallax.js'
   ])
     .pipe(concat('bundle.min.js'))
     .pipe(uglify())
