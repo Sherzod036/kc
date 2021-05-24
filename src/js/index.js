@@ -7,11 +7,46 @@ $(function () {
     nextArrow: '<span class="sr icon-sr"></span>',
     asNavFor: '.gallery__slider-nav'
   })
+
+  // $('.vjs-icon-placeholder').on('click', function () {
+  //   // $('.video-js .vjs-big-play-button .vjs-icon-placeholder:before ').css({
+  //   //   display: 'none !important'
+  //   // })
+
+  //   $('.vjs-icon-placeholder:before').css('background-image', 'url(unknown)')
+  // })
+
   $('.gallery__slider-nav').slick({
     asNavFor: '.gallery__slider-for',
     slidesToShow: 6,
     arrows: false,
-    focusOnSelect: true
+    focusOnSelect: true,
+    responsive: [
+      {
+        breakpoint: 1440,
+        settings: {
+          slidesToShow: 5
+        }
+      },
+      {
+        breakpoint: 700,
+        settings: {
+          slidesToShow: 4
+        }
+      },
+      {
+        breakpoint: 550,
+        settings: {
+          slidesToShow: 3
+        }
+      },
+      {
+        breakpoint: 490,
+        settings: {
+          slidesToShow: 2
+        }
+      }
+    ]
   })
 
   const hamb = $('.hamburger')
@@ -60,3 +95,5 @@ if (window.innerWidth > 1200) {
   const scene = document.getElementById('scene')
   const parallax = new Parallax(scene)
 }
+
+videojs(document.querySelector('.video-js'))

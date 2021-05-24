@@ -2,4 +2,71 @@
   .about__video {
     margin-bottom: 25px;
   }
+  .contacts__circle {
+    display: none;
+  }
+  .contacts__img {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 35px;
+  }
+  .contacts__title::before {
+    display: none;
+  }
+  .contacts__title {
+    display: flex;
+    justify-content: center;
+  }
+  .contact {
+    flex-direction: column;
+  }
+  .contact__icon {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+  .contact__link {
+    text-align: center;
+  }
+  .footer__logo {
+    display: flex;
+    justify-content: center;
+  }
+  .footer__desc {
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  .footer__title {
+    display: flex;
+    justify-content: center;
+  }
+  .footer__title::before {
+    display: none;
+  }
+  .footer {
+    padding: 0;
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+  .footer__nav {
+    margin-bottom: 25px;
+  }
+  .footer__nav .list__item {
+    text-align: center;
+  }
+  .footer__inner {
+    justify-content: center;
+  }
+  .footer__button-wrap {
+    display: flex;
+    justify-content: center;
+  }
+  .copy__items {
+    flex-direction: column;
+  }
+  .copy__text {
+    margin-bottom: 15px;
+  }
+  .footer__icon {
+    margin-right: 15px;
+  }
 }

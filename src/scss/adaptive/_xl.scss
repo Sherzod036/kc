@@ -56,4 +56,45 @@
   .hero__images-circle {
     display: none;
   }
+  .module {
+    padding: 5px 15px;
+  }
+  .appartment__circle {
+    display: none;
+  }
+  .benefits__items {
+    margin-bottom: 50px;
+  }
+  .gallery {
+    padding: 50px 0;
+    height: auto;
+  }
+  .gallery__title {
+    text-align: center;
+  }
+  .gallery__desc {
+    max-width: 100%;
+    text-align: center;
+  }
+  .gallery__button-wrap {
+    display: flex;
+    justify-content: center;
+  }
+  .gallery .gallery__slider-for {
+    border-right: 10px solid #fff;
+  }
+
+  .gallery__slider {
+    position: static;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+  .gallery__bg-color {
+    width: 100%;
+    height: 100%;
+  }
+  .gallery__inner {
+    height: auto;
+    margin-bottom: 25px;
+  }
 }

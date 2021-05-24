@@ -16,4 +16,43 @@
   .about__video {
     height: 270px;
   }
+  .appartment__buttons {
+    flex-direction: column;
+  }
+  .appartment__title {
+    text-align: center;
+  }
+  .module-border-wrap {
+    margin-bottom: 15px;
+    margin-right: 0;
+    text-align: center;
+  }
+  .appartment__items {
+    margin-bottom: 15px;
+  }
+  .suptitle {
+    font-size: 14px;
+    text-align: center;
+  }
+  .maintitle {
+    font-size: 30px;
+    text-align: center;
+  }
+  .appartment__button-wrap {
+    width: 100%;
+    text-align: center;
+  }
+  .gallery .sr {
+    right: 10px;
+  }
+  .gallery .sl {
+    left: 10px;
+  }
+  .map {
+    height: 350px;
+  }
+  .contacts__title {
+    font-size: 30px;
+    text-align: center;
+  }
 }
