@@ -131,7 +131,7 @@
       </div>
       <div class="row">
         <div class="col-lg-6">
-          <div class="appartment__items appartment__type">
+          <!-- <div class="appartment__items appartment__type">
             <span class="appartment__title">Тип недвижимости</span>
             <div class="appartment__buttons">
               <div class="module-border-wrap module-border-wrap--active">
@@ -167,6 +167,90 @@
               </div>
               <div class="module-border-wrap">
                 <div class="module">55.0 m2</div>
+              </div>
+            </div>
+          </div> -->
+
+          <div id="filterForm" class="form">
+            <div class="appartment__type">
+              <div>
+                <input
+                  type="radio"
+                  id="residential"
+                  value="residential"
+                  name="app_type"
+                  checked
+                />
+                <label for="residential">Жилой</label>
+              </div>
+
+              <div>
+                <input
+                  type="radio"
+                  id="commercial"
+                  value="commercial"
+                  name="app_type"
+                />
+                <label for="commercial">Коммерческий</label>
+              </div>
+            </div>
+            <div class="appartment__count">
+              <div>
+                <input
+                  type="radio"
+                  id="app_1"
+                  name="app_count"
+                  value="app_1"
+                  checked
+                />
+                <label for="app_1">1</label>
+              </div>
+              <div>
+                <input type="radio" id="app_2" name="app_count" value="app_2" />
+                <label for="app_2">2</label>
+              </div>
+              <div>
+                <input type="radio" name="app_count" id="app_3" value="app_3" />
+                <label for="app_3">3</label>
+              </div>
+            </div>
+            <div class="appartment__size">
+              <div>
+                <input
+                  type="radio"
+                  name="app_size"
+                  id="app_size_1"
+                  value="app_size_1"
+                  checked
+                />
+                <label for="app_size_1">42,7 m2</label>
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  name="app_size"
+                  id="app_size_2"
+                  value="app_size_2"
+                />
+                <label for="app_size_2">54,9 m2</label>
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  name="app_size"
+                  id="app_size_3"
+                  value="app_size_3"
+                />
+                <label for="app_size_3">70.5 m2</label>
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  name="app_size"
+                  id="app_size_4"
+                  value="app_size_4"
+                />
+                <label for="app_size_4">91.6 m2</label>
               </div>
             </div>
           </div>

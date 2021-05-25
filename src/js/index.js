@@ -89,6 +89,30 @@ $(function () {
       'module-border-wrap--active'
     )
   })
+
+  $('#filterForm input').on('change', function () {
+    const radioTypeChecked = $('input[name="app_type"]:checked').val()
+    const radioCountChecked = $('input[name="app_count"]:checked').val()
+    const radioSizeChecked = $('input[name="app_size"]:checked').val()
+
+    filterImg(radioTypeChecked, radioCountChecked, radioSizeChecked)
+  })
+
+  function filterImg(type, count, size) {
+    const img = $('.appartment__image img')
+    if (type === 'residential' && count === 'app_1' && size === 'app_size_1') {
+      img.attr('src', 'img/app_1_42.png')
+    }
+    if (type === 'residential' && count === 'app_1' && size === 'app_size_2') {
+      img.attr('src', 'img/app_1_54.png')
+    }
+    if (type === 'residential' && count === 'app_2' && size === 'app_size_3') {
+      img.attr('src', 'img/app_2_70.png')
+    }
+    if (type === 'residential' && count === 'app_3' && size === 'app_size_4') {
+      img.attr('src', 'img/app_3_91.png')
+    }
+  }
 })
 
 if (window.innerWidth > 1200) {
